@@ -575,6 +575,22 @@ video {
   height: 70vh;
 }
 
+.h-\[75vh\] {
+  height: 75vh;
+}
+
+.h-\[68vh\] {
+  height: 68vh;
+}
+
+.h-\[65vh\] {
+  height: 65vh;
+}
+
+.h-\[60vh\] {
+  height: 60vh;
+}
+
 .w-full {
   width: 100%;
 }
@@ -808,6 +824,10 @@ video {
 
   .max-sm\:h-\[67vh\] {
     height: 67vh;
+  }
+
+  .max-sm\:h-\[65vh\] {
+    height: 65vh;
   }
 
   .max-sm\:justify-center {
