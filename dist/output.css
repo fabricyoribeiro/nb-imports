@@ -620,6 +620,10 @@ video {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
@@ -817,6 +821,18 @@ video {
 
   .max-sm\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .max-sm\:mt-40 {
+    margin-top: 10rem;
+  }
+
+  .max-sm\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
+  .max-sm\:mt-32 {
+    margin-top: 8rem;
   }
 
   .max-sm\:h-20 {
