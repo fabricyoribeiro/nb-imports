@@ -802,6 +802,14 @@ video {
     height: 75vh;
   }
 
+  .max-sm\:h-\[vh\] {
+    height: vh;
+  }
+
+  .max-sm\:h-\[67vh\] {
+    height: 67vh;
+  }
+
   .max-sm\:justify-center {
     justify-content: center;
   }
