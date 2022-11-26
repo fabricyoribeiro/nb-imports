@@ -39,9 +39,9 @@
         <nav
           class="mx-auto lg:w-8/12 w-11/12 flex justify-center gap-7 my-3 text-white font-semibold "
         >
-          <a href="#" class="hover:border-b-2">Início</a>
-          <a href="#" class="hover:border-b-2">Catálogo</a>
-          <a href="#" class="hover:border-b-2">Contato</a>
+          <a href="#" class="border-b-2 duration-300 border-b-transparent hover:border-b-white ">Início</a>
+          <a href="#" class="border-b-2 duration-300 border-b-transparent hover:border-b-white ">Catálogo</a>
+          <a href="#" class="border-b-2 duration-300 border-b-transparent hover:border-b-white ">Contato</a>
         </nav>
       </header>
 
@@ -63,7 +63,7 @@
             <div class="flex justify-between">
               <div class="hidden lg:block "></div>
               <button
-                class="bg-green-800 items-center w-auto gap-2 flex justify-between mt-4 sm:py-3 sm:px-6 py-2 px-4 rounded-full"
+                class="bg-green-800 items-center w-auto gap-2 flex justify-between mt-4 sm:py-3 sm:px-6 py-2 px-4 rounded-full hover:bg-green-900 duration-[400ms]"
               >
                 <i class="fa fa-whatsapp text-xl "></i>
                 <span class="text-lg"> FAÇA SEU PEDIDO</span>
@@ -77,9 +77,9 @@
         <div
           class="h-16 lg:w-8/12 w-11/12  text-center flex justify-center min-[340px]:gap-10  gap-2 items-center md:text-2xl font-bold max-sm:h-20"
         >
-          <span>Importados <i class="fa fa-plane text-3xl"></i></span>
-          <span>Qualidade <i class="fa fa-check text-3xl"></i></span>
-          <span>Bom atendimento <i class="fa fa-mobile-phone text-3xl"></i></span>
+          <span class="hover:scale-110 duration-500">Importados <i class="fa fa-plane text-3xl"></i></span>
+          <span class="hover:scale-110 duration-500">Qualidade <i class="fa fa-check text-3xl"></i></span>
+          <span class="hover:scale-110 duration-500">Bom atendimento <i class="fa fa-mobile-phone text-3xl"></i></span>
         </div>
       </section>
 
@@ -109,14 +109,14 @@
         <div class="swiper mySwiper flex flex-col w-11/12 lg:w-2/3 h-[65vh] max-sm:h-[65vh] ">
           <h2 class="text-center text-2xl font-semibold  py-5">Conheça nosso catálogo 👇</h2> 
           <div class="swiper-wrapper">
-            <div class="swiper-slide rounded-md"><img src="/src/images/camisa-01.jpg" class="rounded-md" alt=""></div>
-            <div class="swiper-slide rounded-md"><img src="/src/images/camisa-02.jpg" class="rounded-md" alt=""></div>
-            <div class="swiper-slide rounded-md"><img src="/src/images/camisa-03.jpg" class="rounded-md" alt=""></div>
-            <div class="swiper-slide rounded-md"><img src="/src/images/camisa-04.jpg" class="rounded-md" alt=""></div>
-            <div class="swiper-slide rounded-md"><img src="/src/images/camisa-05.jpg" class="rounded-md" alt=""></div>
-            <div class="swiper-slide rounded-md"><img src="/src/images/camisa-06.jpg" class="rounded-md" alt=""></div>
-            <div class="swiper-slide rounded-md"><img src="/src/images/camisa-07.jpg" class="rounded-md" alt=""></div>
-            <div class="swiper-slide rounded-md"><img src="/src/images/camisa-08.jpg" class="rounded-md" alt=""></div>
+            <div class="swiper-slide rounded-md hover:shadow-shadow transition-shadow duration-300"><img src="/src/images/camisa-01.jpg" class="rounded-md" alt=""></div>
+            <div class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"><img src="/src/images/camisa-02.jpg" class="rounded-md" alt=""></div>
+            <div class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"><img src="/src/images/camisa-03.jpg" class="rounded-md" alt=""></div>
+            <div class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"><img src="/src/images/camisa-04.jpg" class="rounded-md" alt=""></div>
+            <div class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"><img src="/src/images/camisa-05.jpg" class="rounded-md" alt=""></div>
+            <div class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"><img src="/src/images/camisa-06.jpg" class="rounded-md" alt=""></div>
+            <div class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"><img src="/src/images/camisa-07.jpg" class="rounded-md" alt=""></div>
+            <div class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"><img src="/src/images/camisa-08.jpg" class="rounded-md" alt=""></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -134,7 +134,7 @@
               </svg> 
               contato@gmail.com</p> 
             <button
-              class="bg-green-800 items-center w-fit gap-2 flex justify-between sm:py-3 sm:px-6 py-2 px-4 rounded-full text-white max-sm:m-auto"
+              class="bg-green-800 items-center w-fit gap-2 flex justify-between sm:py-3 sm:px-6 py-2 px-4 rounded-full text-white max-sm:m-auto hover:bg-green-900 duration-[400ms]"
             >
               <i class="fa fa-whatsapp text-xl"></i>
               <span class="text-lg ">FAÇA SEU PEDIDO</span>
@@ -169,35 +169,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script>
-      // setInterval(() => {
-      //   var preview = window.innerWidth>950? 3 : 2
-      //   console.log(window.screen.width)
-      //   console.log(window.innerWidth)
-      //   console.log(preview)
-
-      //   var swiper = new Swiper(".mySwiper", {
-      //   slidesPerView: preview,
-      //   spaceBetween: 30,
-      //   freeMode: true,
-      //   pagination: {
-      //     el: ".swiper-pagination",
-      //     clickable: true,
-      //   },
-      // });
-      // }, [1000])
-
-      // var html = document.getElementsByTagName('html')
-      // var observer = new MutationObserver(handleMutationObserver )
-      // var config = { childList: true, attributes: true };
-  
-      // function handleMutationObserver( mutations ) {
-      //   mutations.forEach(function(mutation) {
-      //   console.log( mutation.type );
-      // });
-      // }
-  
-      // observer.observe( html, config );
-      
       slide()
       function slide(){
           var preview = 3
@@ -221,7 +192,7 @@
         }
 
         function atualizar(){
-        console.log(window.innerWidth)
+        // console.log(window.innerWidth)
         slide()
       }
     </script>
