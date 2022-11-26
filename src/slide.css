@@ -10,13 +10,13 @@
       }
 
       .swiper {
-        height: 420px;
+        height: 430px;
         display: flex;
         align-items: center;
       }
 
       .swiper-wrapper{
-        height: 300px;
+        height: 50vh;
       }
 
       .swiper-slide {
