@@ -681,8 +681,16 @@ video {
   background-color: rgb(237 224 212 / var(--tw-bg-opacity));
 }
 
+.bg-bg-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.727)), url('/src/images/homem-se-vestindo.jpg');
+}
+
 .bg-gradient-to-bl {
   background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+}
+
+.bg-image-min-md {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.727)), url('/src/images/homem-se-vestindo-alternativo.jpg');
 }
 
 .from-amber-500 {
@@ -693,6 +701,10 @@ video {
 
 .to-orange-700 {
   --tw-gradient-to: #c2410c;
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-clip-text {
@@ -900,6 +912,14 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:bg-image-min-md {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.727)), url('/src/images/homem-se-vestindo-alternativo.jpg');
+  }
+
+  .md\:bg-bg-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.727)), url('/src/images/homem-se-vestindo.jpg');
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;

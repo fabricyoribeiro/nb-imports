@@ -20,15 +20,14 @@ function slide(){
   });
   }
 
-  function atualizar(){
-  // console.log(window.innerWidth)
+  function updateSlide(){
   slide()
 }
 
 ScrollReveal({
   origin: 'top',
   distance: '30px',
-  duration: 2000,
+  duration: 1000,
 }).reveal(`
   #nav,
   #main,
@@ -36,17 +35,3 @@ ScrollReveal({
   #catalog,
   #about
 `);
-
-// ScrollReveal({
-//   origin: 'right',
-//   distance: '90%',
-//   duration: 2000,
-// }).reveal(`
-//   #main #first, 
-//   #main #second,
-//   #style #first, 
-//   #style #second,
-//   #about #first,
-//   #about #second,
-//   #footer
-// `, );

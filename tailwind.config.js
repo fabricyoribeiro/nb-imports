@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'bg-image': "url('./src/images/homem-se-vestindo.jpg')",
+        'image-min-md': "linear-gradient(rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.727)), url('/src/images/homem-se-vestindo-alternativo.jpg')",
+
+        'bg-image': "linear-gradient(rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.727)), url('/src/images/homem-se-vestindo.jpg')"
 
       },
       boxShadow: {

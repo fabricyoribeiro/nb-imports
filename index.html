@@ -8,170 +8,227 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="/src/slide.css">
-    <link rel="stylesheet" href="/src/animations.css">
-
-    <style>
-      main {
-        background: linear-gradient(rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.727)),
-          url('/src/images/homem-se-vestindo-alternativo.jpg');
-        background-size: cover;
-      }
-      @media(min-width: 768px){
-        main {
-          background: linear-gradient(rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.727)),
-            url('/src/images/homem-se-vestindo.jpg');
-          background-size: cover;
-        }
-        
-      }
-    </style>
-
+    <link rel="stylesheet" href="/src/slide.css" />
+    <link rel="stylesheet" href="/src/animations.css" />
     <link href="/dist/output.css" rel="stylesheet" />
     <title>NB Imports</title>
   </head>
-  <body onresize="atualizar()" class="">
-      <nav id="nav" class="fixed w-full z-10">
-        <div
-          class="mx-auto lg:w-8/12 w-11/12 flex justify-center gap-7 my-3 text-white font-semibold "
+  <body onresize="updateSlide()">
+    <nav id="nav" class="fixed w-full z-10">
+      <div
+        class="mx-auto lg:w-8/12 w-11/12 flex justify-center gap-7 my-3 text-white font-semibold"
+      >
+        <a
+          href="#"
+          class="border-b-2 duration-300 border-b-transparent hover:border-b-white"
+          >Início</a
         >
-          <a href="#" class="border-b-2 duration-300 border-b-transparent hover:border-b-white ">Início</a>
-          <a href="#" class="border-b-2 duration-300 border-b-transparent hover:border-b-white ">Catálogo</a>
-          <a href="#" class="border-b-2 duration-300 border-b-transparent hover:border-b-white ">Contato</a>
-        </div>
-      </nav>
-
-      <main id="main" class="h-[80vh]">
-        <div
-          class="lg:grid lg:grid-cols-2 flex lg:justify-end  items-center lg:w-8/12 w-11/12 m-auto bg-image h-full justify-start max-sm:items-start "
+        <a
+          href="#"
+          class="border-b-2 duration-300 border-b-transparent hover:border-b-white"
+          >Catálogo</a
         >
-          <div id="first" class="hidden lg:block"></div>
+        <a
+          href="#"
+          class="border-b-2 duration-300 border-b-transparent hover:border-b-white"
+          >Contato</a
+        >
+      </div>
+    </nav>
 
-          <div id="second" class="animate-right flex flex-col text-white text-right max-sm:mt-40">
-            <h1 class="lg:text-[65px] font-semibold text-5xl ">
-              <span
-                class="text-transparent bg-gradient-to-bl from-amber-500 to-orange-700 bg-clip-text"
-              >
-                NB </span
-              >Imports
-            </h1>
-            <h2 class="lg:text-3xl font-bold text-2xl text-left lg:text-right">Artigos masculinos</h2>
-            <div class="flex justify-between">
-              <div class="hidden lg:block "></div>
+    <main id="main" class="h-[80vh] md:bg-bg-image bg-image-min-md bg-cover">
+      <div
+        class="lg:grid lg:grid-cols-2 flex lg:justify-end items-center lg:w-8/12 w-11/12 m-auto h-full justify-start max-sm:items-start"
+      >
+        <div id="first" class="hidden lg:block"></div>
+
+        <div
+          id="second"
+          class="animate-right flex flex-col text-white text-right max-sm:mt-40"
+        >
+          <h1 class="lg:text-[65px] font-semibold text-5xl">
+            <span
+              class="text-transparent bg-gradient-to-bl from-amber-500 to-orange-700 bg-clip-text"
+            >
+              NB </span
+            >Imports
+          </h1>
+          <h2 class="lg:text-3xl font-bold text-2xl text-left lg:text-right">
+            Artigos masculinos
+          </h2>
+          <div class="flex justify-between">
+            <div class="hidden lg:block"></div>
+            <a href="https://www.whatsapp.com/catalog/558788413992/">
               <button
                 class="bg-green-800 items-center w-auto gap-2 flex justify-between mt-4 sm:py-3 sm:px-6 py-2 px-4 rounded-full hover:bg-green-900 duration-[400ms]"
               >
-                <i class="fa fa-whatsapp text-xl "></i>
+                <i class="fa fa-whatsapp text-xl"></i>
                 <span class="text-lg"> FAÇA SEU PEDIDO</span>
               </button>
-            </div>
+            </a>
           </div>
-        </div>
-      </main>
-
-      <section  class="bg-[#f3eae6] flex justify-center">
-        <div id="range"
-          class="h-16 lg:w-8/12 w-11/12  text-center flex justify-center min-[340px]:gap-10  gap-2 items-center md:text-2xl font-bold max-sm:h-20"
-        >
-          <span class="hover:scale-110 duration-500">Importados <i class="fa fa-plane text-3xl"></i></span>
-          <span class="hover:scale-110 duration-500">Qualidade <i class="fa fa-check text-3xl"></i></span>
-          <span class="hover:scale-110 duration-500">Bom atendimento <i class="fa fa-mobile-phone text-3xl"></i></span>
-        </div>
-      </section>
-
-      <section  class="bg-[#D9C5AB] w-full">
-        <div id="style" class="lg:w-8/12 w-11/12 m-auto grid sm:grid-cols-2 max-sm:justify-center  gap-5 py-6">
-          <div id="first" class="flex justify-center sm:justify-start">
-            <img
-              src="/src/images/modelo02.jpg"
-              alt="modelo"
-              class="w-[400px] rounded-xl"
-            />
-          </div>
-          <div id="second" class="flex justify-center  flex-col  max-sm:text-center">
-            <h2 class="sm:my-4 text-[#a35a2d] text-xl">ESTILO</h2>
-            <h2 class="sm:text-4xl text-3xl">Esteja sempre na moda</h2>
-            <p class="sm:mt-6 mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque reiciendis maxime modi quia sit cum eos a officia ipsum
-              quaerat animi similique aperiam, quas harum odit eveniet itaque
-              commodi. Dolorum.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <div id="catalog" class="bg-[#e3d4c9] "  >
-        <div class=" swiper  mySwiper flex flex-col w-11/12 lg:w-2/3 h-[65vh] max-sm:h-[65vh] ">
-          <h2 class="text-center text-2xl font-semibold  py-5">Conheça nosso catálogo 👇</h2> 
-          <div class="swiper-wrapper">
-            <div class="swiper-slide rounded-md hover:shadow-shadow transition-shadow duration-300"><img src="/src/images/camisa-01.jpg" class="rounded-md" alt=""></div>
-            <div class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"><img src="/src/images/camisa-02.jpg" class="rounded-md" alt=""></div>
-            <div class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"><img src="/src/images/camisa-03.jpg" class="rounded-md" alt=""></div>
-            <div class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"><img src="/src/images/camisa-04.jpg" class="rounded-md" alt=""></div>
-            <div class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"><img src="/src/images/camisa-05.jpg" class="rounded-md" alt=""></div>
-            <div class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"><img src="/src/images/camisa-06.jpg" class="rounded-md" alt=""></div>
-            <div class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"><img src="/src/images/camisa-07.jpg" class="rounded-md" alt=""></div>
-            <div class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"><img src="/src/images/camisa-08.jpg" class="rounded-md" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
         </div>
       </div>
+    </main>
 
-      <section id="about" class="bg-[#ede0d4] w-full">
-        <div class="lg:w-8/12 w-11/12 m-auto grid sm:grid-cols-2  gap-5 py-6">
-          <div id="first" class="flex justify-center flex-col max-sm:text-center">
-            <h2 class="sm:text-4xl text-3xl">
-              Entre em contato com a gente</h2>
-              <p class="sm:my-6 my-3">
-              <svg class="inline" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#212731" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M22 6L12 13L2 6" stroke="#212731" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg> 
-              contato@gmail.com</p> 
+    <section class="bg-[#f3eae6] flex justify-center">
+      <div
+        id="range"
+        class="h-16 lg:w-8/12 w-11/12 text-center flex justify-center min-[340px]:gap-10 gap-2 items-center md:text-2xl font-bold max-sm:h-20"
+      >
+        <span class="hover:scale-110 duration-500"
+          >Importados <i class="fa fa-plane text-3xl"></i
+        ></span>
+        <span class="hover:scale-110 duration-500"
+          >Qualidade <i class="fa fa-check text-3xl"></i
+        ></span>
+        <span class="hover:scale-110 duration-500"
+          >Bom atendimento <i class="fa fa-mobile-phone text-3xl"></i
+        ></span>
+      </div>
+    </section>
+
+    <section class="bg-[#D9C5AB] w-full">
+      <div
+        id="style"
+        class="lg:w-8/12 w-11/12 m-auto grid sm:grid-cols-2 max-sm:justify-center gap-5 py-6"
+      >
+        <div id="first" class="flex justify-center sm:justify-start">
+          <img
+            src="/src/images/modelo02.jpg"
+            alt="modelo"
+            class="w-[400px] rounded-xl"
+          />
+        </div>
+        <div
+          id="second"
+          class="flex justify-center flex-col max-sm:text-center"
+        >
+          <h2 class="sm:my-4 text-[#a35a2d] text-xl">ESTILO</h2>
+          <h2 class="sm:text-4xl text-3xl">Esteja sempre na moda</h2>
+          <p class="sm:mt-6 mt-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            reiciendis maxime modi quia sit cum eos a officia ipsum quaerat
+            animi similique aperiam, quas harum odit eveniet itaque commodi.
+            Dolorum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div id="catalog" class="bg-[#e3d4c9]">
+      <div
+        class="swiper mySwiper flex flex-col w-11/12 lg:w-2/3 h-[65vh] max-sm:h-[65vh]"
+      >
+        <h2 class="text-center text-2xl font-semibold py-5">
+          Conheça nosso catálogo 👇
+        </h2>
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide rounded-md hover:shadow-shadow transition-shadow duration-300"
+          >
+            <img src="/src/images/camisa-01.jpg" class="rounded-md" alt="" />
+          </div>
+          <div
+            class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"
+          >
+            <img src="/src/images/camisa-02.jpg" class="rounded-md" alt="" />
+          </div>
+          <div
+            class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"
+          >
+            <img src="/src/images/camisa-03.jpg" class="rounded-md" alt="" />
+          </div>
+          <div
+            class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"
+          >
+            <img src="/src/images/camisa-04.jpg" class="rounded-md" alt="" />
+          </div>
+          <div
+            class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"
+          >
+            <img src="/src/images/camisa-05.jpg" class="rounded-md" alt="" />
+          </div>
+          <div
+            class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"
+          >
+            <img src="/src/images/camisa-06.jpg" class="rounded-md" alt="" />
+          </div>
+          <div
+            class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"
+          >
+            <img src="/src/images/camisa-07.jpg" class="rounded-md" alt="" />
+          </div>
+          <div
+            class="swiper-slide rounded-md hover:shadow-shadow duration-300 transition-shadow"
+          >
+            <img src="/src/images/camisa-08.jpg" class="rounded-md" alt="" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <section id="about" class="bg-[#ede0d4] w-full">
+      <div class="lg:w-8/12 w-11/12 m-auto grid sm:grid-cols-2 gap-5 py-6">
+        <div id="first" class="flex justify-center flex-col max-sm:text-center">
+          <h2 class="sm:text-4xl text-3xl">Entre em contato com a gente</h2>
+          <p class="sm:my-6 my-3">
+            <i class="fa fa-envelope text-xl"></i>
+            contato@gmail.com
+          </p>
+          <a href="https://www.whatsapp.com/catalog/558788413992/">
             <button
               class="bg-green-800 items-center w-fit gap-2 flex justify-between sm:py-3 sm:px-6 py-2 px-4 rounded-full text-white max-sm:m-auto hover:bg-green-900 duration-[400ms]"
             >
               <i class="fa fa-whatsapp text-xl"></i>
-              <span class="text-lg ">FAÇA SEU PEDIDO</span>
+              <span class="text-lg">FAÇA SEU PEDIDO</span>
             </button>
-          </div>
-          <div id="second" class="flex justify-end max-sm:justify-center">
-            <img
-              src="/src/images/homem-com-celular.jpg"
-              alt=""
-              class="w-[400px] rounded-xl"
-            />
-          </div>
+          </a>
         </div>
-      </section>
-
-      <footer id="footer" class="flex justify-center items-center gap-5 py-1 bg-[#D9C5AB]">
-        <h2 class="text-lg font-bold"><span class="text-transparent bg-gradient-to-bl from-amber-500 to-orange-700 bg-clip-text">NB</span> Imports</h2>
-        <div>
-          <ul class="flex gap-3">
-            <li><a href=""><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z" stroke="#212731" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-              <path d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z" stroke="#212731" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-              <path d="M17.5 6.49997H17.51" stroke="#212731" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg></a></li>
-
-            <li><a href=""></a><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z" stroke="#212731" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg></li>
-          </ul>
+        <div id="second" class="flex justify-end max-sm:justify-center">
+          <img
+            src="/src/images/homem-com-celular.jpg"
+            alt=""
+            class="w-[400px] rounded-xl"
+          />
         </div>
-      </footer>
+      </div>
+    </section>
+
+    <footer
+      id="footer"
+      class="flex justify-center items-center gap-3 py-1 bg-[#D9C5AB]"
+    >
+      <h2 class="text-lg font-bold">
+        <span
+          class="text-transparent bg-gradient-to-bl from-amber-500 to-orange-700 bg-clip-text"
+          >NB</span
+        >
+        Imports
+      </h2>
+      <div>
+        <ul class="flex gap-3 text-lg">
+          <li>
+            <a href="https://www.instagram.com/nb_importsoficial/?next=%2F" target="_blank"
+            >
+            <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/nbimports97" target="_blank">
+            <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-    <script>
-
-    </script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="src/main.js"></script>
   </body>
