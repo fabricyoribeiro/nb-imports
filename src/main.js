@@ -35,3 +35,48 @@ ScrollReveal({
   #catalog,
   #about
 `);
+
+window.addEventListener('scroll', onScroll)
+
+function showNavOnScroll(){
+  if(scrollY>0){
+    document.querySelector('#nav').classList.add('bg-yellow-900')
+  }else{
+    document.querySelector('#nav').classList.remove('bg-yellow-900')
+  }
+}
+
+function onScroll(){
+  showNavOnScroll()
+  activateMenuAtCurrentSection(main)
+  activateMenuAtCurrentSection(catalog)
+  activateMenuAtCurrentSection(about)
+}
+
+function activateMenuAtCurrentSection(section){
+  const targetLine = scrollY + innerHeight / 2
+
+  const sectionTop = section.offsetTop
+
+  const sectionHeight = section.offsetHeight
+
+  const sectonTopReachOrPassedTargetLine = targetLine >= sectionTop
+
+  const sectionEndAt = sectionTop + sectionHeight 
+
+  const sectionEndPassedTargetLine = sectionEndAt <= targetLine
+
+  const sectionBoundaries = sectonTopReachOrPassedTargetLine && !sectionEndPassedTargetLine
+
+  const sectionId = section.getAttribute('id')
+
+  const menuElement = document.querySelector(`nav a[href*=${sectionId}]`) 
+
+  menuElement.classList.add('border-b-transparent')
+  if(sectionBoundaries){
+    menuElement.classList.remove('border-b-transparent')
+    menuElement.classList.add('border-b-white')
+  }
+
+}
+
