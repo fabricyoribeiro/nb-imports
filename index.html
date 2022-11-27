@@ -12,6 +12,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/slide.css" />
     <link rel="stylesheet" href="/src/animations.css" />
     <link href="/dist/output.css" rel="stylesheet" />
@@ -22,7 +25,7 @@
       border-bottom: 2px white;
     }
   </style> -->
-  <body onresize="updateSlide()">
+  <body onresize="updateSlide()" style="font-family: 'Poppins', sans-serif;">
     <nav id="nav" class="fixed w-full z-10 ">
       <div
         class="mx-auto lg:w-8/12 w-11/12 flex justify-center gap-7 my-3 text-white font-semibold"
@@ -62,7 +65,7 @@
               NB </span
             >Imports
           </h1>
-          <h2 class="lg:text-3xl font-bold text-2xl text-left lg:text-right">
+          <h2 class="lg:text-3xl font-semibold text-2xl text-left lg:text-right">
             Artigos masculinos
           </h2>
           <div class="flex justify-between">
@@ -83,7 +86,7 @@
     <section class="bg-[#f3eae6] flex justify-center">
       <div
         id="range"
-        class="h-16 lg:w-8/12 w-11/12 text-center flex justify-center min-[340px]:gap-10 gap-2 items-center md:text-2xl font-bold max-sm:h-20"
+        class="h-16 lg:w-8/12 w-11/12 text-center flex justify-center min-[340px]:gap-10 gap-2 items-center md:text-2xl font-semibold max-sm:h-20"
       >
         <span class="hover:scale-110 duration-500"
           >Importados <i class="fa fa-plane text-3xl"></i
@@ -209,7 +212,7 @@
       id="footer"
       class="flex justify-center items-center gap-3 py-1 bg-[#D9C5AB]"
     >
-      <h2 class="text-lg font-bold">
+      <h2 class="text-lg font-semibold">
         <span
           class="text-transparent bg-gradient-to-bl from-amber-500 to-orange-700 bg-clip-text"
           >NB</span
