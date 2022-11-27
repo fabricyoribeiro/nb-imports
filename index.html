@@ -14,7 +14,7 @@
     href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="/src/slide.css">
-    <!-- <link rel="stylesheet" href="/src/animations.css"> -->
+    <link rel="stylesheet" href="/src/animations.css">
 
     <style>
       main {
@@ -106,8 +106,8 @@
         </div>
       </section>
 
-      <div id="catalog" class="bg-[#e3d4c9]">
-        <div class="swiper mySwiper flex flex-col w-11/12 lg:w-2/3 h-[65vh] max-sm:h-[65vh] ">
+      <div id="catalog" class="bg-[#e3d4c9] "  >
+        <div class=" swiper mySwiper flex flex-col w-11/12 lg:w-2/3 h-[65vh] max-sm:h-[65vh] ">
           <h2 class="text-center text-2xl font-semibold  py-5">Conheça nosso catálogo 👇</h2> 
           <div class="swiper-wrapper">
             <div class="swiper-slide rounded-md hover:shadow-shadow transition-shadow duration-300"><img src="/src/images/camisa-01.jpg" class="rounded-md" alt=""></div>
@@ -151,7 +151,7 @@
         </div>
       </section>
 
-      <footer class="flex justify-center items-center gap-5 py-1 bg-[#D9C5AB]">
+      <footer id="footer" class="flex justify-center items-center gap-5 py-1 bg-[#D9C5AB]">
         <h2 class="text-lg font-bold"><span class="text-transparent bg-gradient-to-bl from-amber-500 to-orange-700 bg-clip-text">NB</span> Imports</h2>
         <div>
           <ul class="flex gap-3">
@@ -170,33 +170,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script>
-      slide()
-      function slide(){
-          var preview = 3
-          if (467<window.innerWidth<950){
-              preview = 2
-          }
-          if(window.innerWidth<467){
-            preview = 1
-          }if(window.innerWidth>950){
-            preview = 3
-          }
-          var swiper = new Swiper(".mySwiper", {
-          slidesPerView: preview,
-          spaceBetween: 30,
-          freeMode: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-        });
-        }
-
-        function atualizar(){
-        // console.log(window.innerWidth)
-        slide()
-      }
-
 
     </script>
     <script src="https://unpkg.com/scrollreveal"></script>
