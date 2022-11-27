@@ -14,6 +14,7 @@
     href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="/src/slide.css">
+    <!-- <link rel="stylesheet" href="/src/animations.css"> -->
 
     <style>
       main {
@@ -34,24 +35,24 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <title>NB Imports</title>
   </head>
-  <body onresize="atualizar()" class="bg-[#212731]">
-      <header class="fixed w-full">
-        <nav
+  <body onresize="atualizar()" class="">
+      <nav id="nav" class="fixed w-full">
+        <div
           class="mx-auto lg:w-8/12 w-11/12 flex justify-center gap-7 my-3 text-white font-semibold "
         >
           <a href="#" class="border-b-2 duration-300 border-b-transparent hover:border-b-white ">Início</a>
           <a href="#" class="border-b-2 duration-300 border-b-transparent hover:border-b-white ">Catálogo</a>
           <a href="#" class="border-b-2 duration-300 border-b-transparent hover:border-b-white ">Contato</a>
-        </nav>
-      </header>
+        </div>
+      </nav>
 
-      <main class="h-[80vh]">
+      <main id="main" class="h-[80vh]">
         <div
           class="lg:grid lg:grid-cols-2 flex lg:justify-end  items-center lg:w-8/12 w-11/12 m-auto bg-image h-full justify-start max-sm:items-start "
         >
-          <div class="hidden lg:block"></div>
+          <div id="first" class="hidden lg:block"></div>
 
-          <div class="flex flex-col text-white text-right max-sm:mt-40">
+          <div id="second" class="animate-right flex flex-col text-white text-right max-sm:mt-40">
             <h1 class="lg:text-[65px] font-semibold text-5xl ">
               <span
                 class="text-transparent bg-gradient-to-bl from-amber-500 to-orange-700 bg-clip-text"
@@ -73,8 +74,8 @@
         </div>
       </main>
 
-      <section class="bg-[#f3eae6] flex justify-center">
-        <div
+      <section  class="bg-[#f3eae6] flex justify-center">
+        <div id="range"
           class="h-16 lg:w-8/12 w-11/12  text-center flex justify-center min-[340px]:gap-10  gap-2 items-center md:text-2xl font-bold max-sm:h-20"
         >
           <span class="hover:scale-110 duration-500">Importados <i class="fa fa-plane text-3xl"></i></span>
@@ -83,16 +84,16 @@
         </div>
       </section>
 
-      <section class="bg-[#D9C5AB] w-full">
-        <div class="lg:w-8/12 w-11/12 m-auto grid sm:grid-cols-2 max-sm:justify-center  gap-5 py-6">
-          <div class="flex justify-center sm:justify-start">
+      <section  class="bg-[#D9C5AB] w-full">
+        <div id="style" class="lg:w-8/12 w-11/12 m-auto grid sm:grid-cols-2 max-sm:justify-center  gap-5 py-6">
+          <div id="first" class="flex justify-center sm:justify-start">
             <img
               src="/src/images/modelo02.jpg"
               alt="modelo"
               class="w-[400px] rounded-xl"
             />
           </div>
-          <div class="flex justify-center  flex-col  max-sm:text-center">
+          <div id="second" class="flex justify-center  flex-col  max-sm:text-center">
             <h2 class="sm:my-4 text-[#a35a2d] text-xl">ESTILO</h2>
             <h2 class="sm:text-4xl text-3xl">Esteja sempre na moda</h2>
             <p class="sm:mt-6 mt-2">
@@ -105,7 +106,7 @@
         </div>
       </section>
 
-      <div class="bg-[#e3d4c9]">
+      <div id="catalog" class="bg-[#e3d4c9]">
         <div class="swiper mySwiper flex flex-col w-11/12 lg:w-2/3 h-[65vh] max-sm:h-[65vh] ">
           <h2 class="text-center text-2xl font-semibold  py-5">Conheça nosso catálogo 👇</h2> 
           <div class="swiper-wrapper">
@@ -122,9 +123,9 @@
         </div>
       </div>
 
-      <section class="bg-[#ede0d4] w-full">
+      <section id="about" class="bg-[#ede0d4] w-full">
         <div class="lg:w-8/12 w-11/12 m-auto grid sm:grid-cols-2  gap-5 py-6">
-          <div class="flex justify-center flex-col max-sm:text-center">
+          <div id="first" class="flex justify-center flex-col max-sm:text-center">
             <h2 class="sm:text-4xl text-3xl">
               Entre em contato com a gente</h2>
               <p class="sm:my-6 my-3">
@@ -140,7 +141,7 @@
               <span class="text-lg ">FAÇA SEU PEDIDO</span>
             </button>
           </div>
-          <div class="flex justify-end max-sm:justify-center">
+          <div id="second" class="flex justify-end max-sm:justify-center">
             <img
               src="/src/images/homem-com-celular.jpg"
               alt=""
@@ -195,6 +196,10 @@
         // console.log(window.innerWidth)
         slide()
       }
+
+
     </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="src/main.js"></script>
   </body>
 </html>
