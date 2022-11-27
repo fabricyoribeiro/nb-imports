@@ -32,7 +32,6 @@ ScrollReveal({
 }).reveal(`
   #nav,
   #main,
-
   #style,
   #catalog,
   #about
